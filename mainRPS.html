@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="mainRPS.css">
+  </head>
+  <body>
+    <div class="game">
+      <span id="title"><p>Rock paper scissors</p></span>
+
+      <div class="gameElements">
+        <button class="change"
+          onclick="
+            playGame('rock')
+        "
+        >
+          Rock
+        </button>
+
+        <button class="change"
+          onclick="
+            playGame('paper')
+        "
+        >
+          papers
+        </button>
+
+        <button class="change"
+          onclick="
+            playGame('scissors')
+        "
+        >
+          scissors
+        </button>
+
+        <br>
+
+        <button id="reset"
+          onclick="
+            const scoreReset =
+              score.wins = 0;
+              score.losses = 0;
+              score.ties = 0;
+
+      alert('score reset');
+      console.log(score)
+      localStorage.removeItem('score')
+
+        "
+        >
+          reset
+        </button>
+      </div>
+    </div>
+
+    <script src="mainRPS.js"></script>
+  </body>
+</html>
